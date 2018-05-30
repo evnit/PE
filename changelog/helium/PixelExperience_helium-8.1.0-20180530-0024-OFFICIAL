@@ -1,0 +1,696 @@
+=======================
+     05-30-2018
+=======================
+
+
+=======================
+     05-29-2018
+=======================
+
+
+=======================
+     05-28-2018
+=======================
+
+
+   * packages/apps/Settings/
+227e968 SystemUpdatePreferenceController: Don't allow on GSI builds
+
+   * system/vold/
+aa9c6e2 vold: Conditionally remove secdiscard command
+
+   * vendor/aosp/
+a074ec4 vendor: Don't show "treble_gsi" target on lunch
+
+   * vendor/opengapps/build/
+f716e61 Revert "Add support for "lzip --decompress""
+
+   * vendor/opengapps/sources/arm/
+e84059a Google (beta) arm-16 8.5.13.16.arm (160)
+
+=======================
+     05-27-2018
+=======================
+
+
+   * build/make/
+4b2070c build: Fix changelog generation logic
+0a36b58 build: Don't add generic targets
+
+   * device/qcom/sepolicy/
+434de4f sepolicy: allow vold to read persist dirs
+9dcaef3 sepolicy: qti_init_shell needs to read dir too
+79d07e5 msm8916: Label the FRP partition
+4e318b7 legacy: Make WCNSS props readable to hci_qcomm_init
+3b03479 legacy: Resolve msm8992/4 perfd denials
+5a579ea legacy: perf: allow checking for existence of other processes (signull)
+e292b3d legacy: Label BT_QCA6174 sysfs files
+576d751 legacy: Fix msm8992/4 mm-qcamerad sysfs denials
+f77563f legacy: Fix labelling msm8992/4 SSR sysfs
+
+   * frameworks/av/
+2c4890d libstagefright: Support disabling metadata with a property
+7b600e2 libstagefright: bring back certain 64bit variants for software codecs
+
+   * frameworks/base/
+df6f4ad Revert "Camera: Extend face detection"
+94b15c8 base: Unbreak public API
+807e482 Automatic translation import
+366b217 Fix another potential ChooserActivity related System FC
+7a993a7 SystemUI: update heads up drawable
+c22150d SystemUI: Enable dualTarget on CellularTile
+
+   * frameworks/hwkeys-support/
+fabf899 Automatic translation import
+
+   * frameworks/native/
+b741e2c sensorservice: Register orientation sensor if HAL doesn't provide it
+4ef4817 Revert "sensorservice: Register orientation sensor if HAL doesn't provide it"
+
+   * packages/apps/CustomSettings/
+e1f2b88 Automatic translation import
+1409929 [2/2] Add index rules for our custom additions
+
+   * packages/apps/FMRadio/
+fdbac0c Automatic translation import
+
+   * packages/apps/Settings/
+e8522c7 Automatic translation import
+7b917d1 SimSettings: Fix potential NPE
+370f5c0 [1/2] Add index rules for our custom additions
+
+   * packages/apps/Updates/
+12b22b1 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+374dd33 Automatic translation import
+
+   * packages/services/Telecomm/
+6ba1bf2 Telecomm: Account for default data sub ID when setting MSIM audio params
+
+   * packages/services/Telephony/
+b59af5e Automatic translation import
+
+   * vendor/aosp/
+b3ea563 vendor: Delete changelog on root directory
+0f321ef vendor: Add GSI build target
+8cd090c verity: Implement verity tool
+2c64e5b apn: Fix typo in Rogers roaming protocol
+bd866dc apns: Adjust MetroPCS apn to allow USB tether
+
+   * vendor/opengapps/sources/arm64/
+8ebfa23 Google (beta) arm64-21 8.5.13.21.arm64 (nodpi)
+
+   * vendor/themes/
+f808850 Automatic translation import
+
+=======================
+     05-26-2018
+=======================
+
+
+   * frameworks/base/
+24aff44 SystemUI: Enable custom qs tiles
+8af0087 SystemUI: fix ambient display when HeadsUp disabled
+edd37e8 SystemUI: Improve few QS Tiles
+9d9cf60 SystemUI: Add heads up tile
+4ed6825 Remove other options off the Caffeine QS Tile but infinite
+9d8454e Add Caffeine QS Tile
+6c80493 Enable three icon switching within QS DND tile
+608db96 LockTaskNotify: Reload navigation bar when entering
+66baee3 Expose two target preference divider color
+
+   * frameworks/hwkeys-support/
+ec9707f HWKeys actions: Add Google Sound Search action
+6b5052e Fix lastapp action going to homescreen when no default launcher is set
+
+   * packages/apps/CustomSettings/
+1ee95a5 ButtonSettings: Fix utouch for zuk z2
+
+   * packages/apps/Updates/
+be0ac9f Cleanup unused array
+
+   * vendor/aosp/
+3081f84 kernel.mk: Get rid of URLs in Clang version string
+
+   * vendor/opengapps/sources/all/
+e146db4 Fit all-16 1.82.40-136 (320)
+
+   * vendor/themes/
+17423cd Theme two target preference vertical divider
+28b5124 Fix string name
+
+=======================
+     05-25-2018
+=======================
+
+
+   * frameworks/base/
+e603df5 Volume wake/skip track: Make it work independently
+78a9bbe Merge "Fix volume rocker skip track on Ambient Display and Lift to Wake" into oreo-mr1
+ae63a2e Fix volume rocker skip track on Ambient Display and Lift to Wake
+3dc4e49 base: fix double volume events on screen off
+e0a2062 Volume Rocker Wake [1/2]
+91e67c5 Volume key music control [1/2]
+3cca40c FWB: Add Volume Key Answer (1/2)
+6853459 Option to use volume keys to control media volume anytime (2/2)
+5a07322 [1/2] base: allow to swap volume buttons rotation based
+0982827 Led light preview: switch led off before changing the color
+7dcd082 Add api to force show led lights
+9256c7d Notification and battery light [1/3]
+4f3ca83 Power button flashlight toggle: Disable in lock task mode
+637729f Flashlight toggle api improvements
+d565e13 Allow doubletap/longpress power to toggle torch [1/3]
+59a0f6f Run NavBarTuner external
+a9741bb HWKeys: Update detection logic [2/3]
+97d1cf8 add configurable wake keys (1/2)
+9925c8f Merge "Custom button light [1/2]" into oreo-mr1
+95206e6 HWKeys: Disable haptic on keyguard
+3b31027 Fix back press count for panic with DU HW buttons
+cfb617c Custom button light [1/2]
+8c0648b Buttons: Hardware key disable support with M adaptations
+7e5ddca Don't report existing menu key if it was remapped. [2/3]
+73e8256 HW Keys customization support [2/4]
+
+   * frameworks/hwkeys-support/
+15f0cf9 HWKeys: Update detection logic [1/3]
+
+   * packages/apps/CustomSettings/
+de062fc ButtoSettings: UTouch improvements
+faa53cb HWKeys: Update detection logic [3/3]
+2fb8d96 HWKeys Custom actions: compatibility for Tasker and other activities
+f4d8834 Color picker: show hex input box on top
+ac2a7fa PackageListAdapter: show more apps in the list
+fb21dfc ButtonSettings: Fix volume wake preference key
+a9905b1 ButtonSettings: Fix build
+16ff13d add configurable wake keys (2/2)
+e2bc573 Custom button light [2/2]
+
+   * packages/apps/Settings/
+b27f887 Notification and battery light [2/3]
+ee24468 Merge "Settings: Integrate ButtonSettings into System Settings" into oreo-mr1
+16ec0bd Allow to doubletap or longpress power to toggle flashlight [3/3]
+259a7e4 Show empty summary on encryption preference
+
+   * packages/apps/Snap/
+5d7e644 Remove lineage sdk dependency
+
+=======================
+     05-24-2018
+=======================
+
+
+   * frameworks/base/
+2c06141 Use Auto brightness for Ambient Display
+
+   * packages/apps/CustomSettings/
+79e6e7f Revert some features
+
+   * packages/apps/Launcher3/
+0df5a4e Exclude from recents
+b10d3fd Launcher3: Only fail for the current user
+a35b55e WallpaperManagerCompat: correct build version check
+
+   * packages/apps/Settings/
+554de28 Settings: Integrate ButtonSettings into System Settings
+
+=======================
+     05-23-2018
+=======================
+
+
+   * frameworks/base/
+70e25c8 Themes: Reinflate on accent change
+1318c27 Multi-User fixes
+e095bea Disallow extra power menu items when the device is in lock task mode
+c6cffd0 GlobalActions: Cleanup "Don't show some options if device is locked"
+6ea46ee Revert "Hide the power menu on the lockscreen [1/2]"
+dcd6d17 Require unlocking for more QS tiles
+
+   * frameworks/hwkeys-support/
+4bc824c Fix build
+
+=======================
+     05-22-2018
+=======================
+
+
+   * frameworks/base/
+c44f027 GlobalActions: Use AOSP string on restart option
+2c21412 Add app drawer fastscroller text color to be used by overlays
+6938e55 SystemUI: Themes: Only refresh when necessary
+c1ea16a Merge "base: update UiManager's night mode according to theme" into oreo-mr1
+837a216 Merge "fwb: Fix indentation on custom_symbols" into oreo-mr1
+27aba9f Merge "Power menu scrollview improvements" into oreo-mr1
+ba7caf6 Merge "GlobalActions: Remove custom strings in dialogs" into oreo-mr1
+d2fce56 Merge "GlobalActions: Don't show some options if device is locked" into oreo-mr1
+1e7878f Merge "Hide the power menu on the lockscreen [1/2]" into oreo-mr1
+e219763 Merge "Set scrollview on the power menu" into oreo-mr1
+7f8f07a Merge "Make the power menu configurable [1/2]" into oreo-mr1
+0f95118 Merge "Enable/fix airplane mode in power menu" into oreo-mr1
+f42d5e8 Merge "Use new gradient dialog also for recovery/bootloader action" into oreo-mr1
+b07fb6d Merge "Kill off the legacy dialog" into oreo-mr1
+00de791 Merge "Add screenshot option" into oreo-mr1
+6d486ad Merge "Add intent for screenshot" into oreo-mr1
+ba17e37 Merge "Add soft reboot option" into oreo-mr1
+3622d11 Merge "Update power menu icons" into oreo-mr1
+bda3302 Merge "Power menu advanced reboot: make it dynamic" into oreo-mr1
+8a4b808 Merge "PowerMenu toggleable recovery/bootloader action" into oreo-mr1
+2a52938 Themes: Allow Permission Icons to be fully themed
+
+   * frameworks/hwkeys-support/
+bd3f2cc Fix possible NPE after dd948d1a844c86e191ece0304a21a15c9535fa5b
+dd948d1 KillApp: Use SystemUI context for toast message. It fixed toast theming
+
+   * packages/apps/Launcher3/
+66e89a0 Stability NullPointer issue
+1e6418d No Calendarwidget 4x4 widget displayed
+8be8aea App search interface overlap with the desktop icon
+131ac86 Avoid crash when widget previews have no intrinsic size
+1bbb367 Home screen date/weather: Use short day of the week
+a8b8a5f Change the Settings theme to match System Settings' theme
+43f74cd Expose app drawer fastscroller thumb & text
+61c75a8 Adjust the accent so it changes with the system's accent
+6a79f26 Fix not working weather and Google now feed automatic theme
+7f15272 Apps drawer search bar: make search text color dynamic
+503a464 Sync launcher theme with system dark/light theme
+745bdd8 Make AmirZ's Pixel Launcher source buildable within rom somehow
+
+   * packages/apps/Settings/
+ae3b0ce Disable navbar on fingerprint enroll if bottom fingerprint
+784b066 Adjust delay to prevent glitches when reloading notifications
+30043a6 Ignore generic dark overlay from list
+5a36fc4 Fruity pebbles [3/3]
+b87fa2b Make aosp theme selector unavailable
+5f06b6c Jump to homescreen and back on theme change
+91c03d2 Implement PreferenceControllerMixin to DarkUI preference controller
+a656429 Configure SystemUI theme
+730ea4b Expose suggestion card summary text
+de4830a Expose suggestions background color
+e785f4b WiFi: Remove country code checking. Always allow 5gHz AP option
+26962b5 Settings: Add SettingsMultiSelectListPreference style
+ec1ce41 Hide signal strength when told by carrier
+67a0f9e Disable toggle for forcing apps to be resizable on Android Go
+08bf1c4 Remove summary of encryption preference
+5f87708 Add search bar to apps & notifications & battery optimizations
+0ed3165 Update animation seekbar to incorporate support friendly internal approach
+10d482c Animation scale seekbars
+2fe9574 GesturesPref: Add ability to launch device gestures activity
+6c30df2 Fixes f/c in sim status on caf devices
+11ebc25 Settings: use CUSTOM_FINGERPRINT for search index check
+b83c960 Settings: Add toggle for proximity wake
+61f1cb2 Settings: Disable AOD by default [1/2]
+7ccbb0e Fix memory leak of DataSaverPreference
+7f08ecc Add package name to installed app details
+50c6112 Fix always-on VPN sync problem
+f04662b Fix ANR problem when enable/disable NFC button
+df56142 Fix toast is covered by PIN code screen after wrong pin
+a56ec4f Themes: Fix BT pair dialog
+81f29a7 APN: let user decide what he wants to do * allow add button and Revert "Disallow adding/editing dun APNs unless allowed by carrier."
+8c1ed2e Wifi: Restore hidden flag for hidden networks on update network
+4ccc2d4 StorageSummaryPreference: Nuke hardcoded color * Now dark theme is OK
+d9134f7 SimPreferenceDialog: Add Pixel Color
+c585fd3 Fix BT pairing dialog DarkUI theme issue
+77635c2 Settings: Fix empty summary for VPN and SIM Card
+8ae40e7 Kill the logspam due to BackupSettingsActivity
+2901d40 IMS: Do not disable WiFi Calling for "registration error"
+ffa3caa AmbientDisplay: Add custom pref for devices with custom doze packages
+c08e85b Add fastscroll to the Manage applications screen
+a924729 Use separate icon for flashlight power usage
+afc6a97 Settings: Wi-Fi WPS Materialized icon
+34fbdec The blueman group have left the building..
+4baa66f Kill log spam in InstalledAppDetails
+0db04ca DisplaySettings: font size in 5% steps from 80% to 130%
+ffb9c5e Remove feedback and bug report stuff
+0244530 Remove the Automatic ota check option but be sure it's disabled
+bee6172 Settings is crashed high probability when doing follow steps
+b501336 Fix crash issue when user uses multi-window mode on WifiCallingSettings
+c574901 Fix wrong label for Desktop backup password
+90ada70 StorageSettings: Use pixel color in storage bar / icon
+79c6496 Fix NPE in SettingsPreferenceFragment
+d518453 Comment out demo mode / quick settings option
+627bacb Fix a crash in ChooseLockGenericFragment.
+4e89b3f Fix BT stop searching after rotating screen.
+2697e3d Center empty textview for BT
+d06ae41 Comment out Legal/Regulatory info
+2fee781 Remove text from actionbar / Use overflow menu
+88778ac Can't go back to previous screen after going to APN settings
+744052e Enable fast scroll for all app list views
+1f26418 Disable the other learn more too to prevent crash
+67cb839 Hide learn more button on fingerprint page
+da7844e Port "Battery Usage Alerts" feature from factory images to aosp
+678fe32 Correctly align cursor in Settings
+dd8ae33 Fix memory leak in Bluetooth settings
+66f7574 SystemUpdatePreferenceController: Cleanup
+3151c98 SystemUpdatePreferenceController: Remove summary
+3a2345d SystemUpdatePreferenceController: Refactor for our OTA app
+57eef55 Settings: Append PixelExperience build date/type on BuildNumberPreference
+a553b5f Settings: Fix the failing strings
+37dda0d FingerprintEnrollFindSensor: Don't overlay front for side sensors
+bc07a35 Settings: vectorize ic_live_help icon and fix theming for SimDialogActivity
+9bd59f8 MultiSim: Fix hardcoded text color
+bbccbe4 SimSettings: Handle NoClassDefFoundError on devices without telephony-ext
+2db5dad MSIM: Fix user set DDS sub in hotswap cases.
+4dc4b38 SimSettings: Improve dialogs
+b2b5497 SimSettings: Correctly disable sim switch without SIM card
+c64240a SimSettings: Port manual provisiong support
+b87ed9f InstalledAppDetails: fix refreshing storage summary after force stop
+3d83a3e fingerprint: Allow devices to configure sensor location
+cc44f4a Allow sorting Applications by size
+6d9e347 Refresh UI on force stop/disable
+2ec2178 Improve app info screen
+093c6c2 Add package name to installed app details
+
+   * packages/apps/Updates/
+24cda9e LocalChangelog: Cleanup logic again
+
+   * vendor/aosp/
+0bfa6f2 vendor: Build Launcher3
+5fed310 Merge "vendor: Include themes" into oreo-mr1
+
+   * vendor/opengapps/build/
+383ac9a Implement TARGET_GAPPS_ARCH
+
+   * vendor/pixelstyle/
+b42cd07 Bye PixelLauncher
+
+   * vendor/themes/
+ab0cc57 Theme the fastscroller text color
+acc0a14 Dark theme permission icon
+
+=======================
+     05-21-2018
+=======================
+
+
+   * frameworks/base/
+7b263e4 base: update UiManager's night mode according to theme
+78170d0 fwb: Fix indentation on custom_symbols
+0042063 Power menu scrollview improvements
+e395dc2 GlobalActions: Remove custom strings in dialogs
+7531600 GlobalActions: Don't show some options if device is locked
+74934ec Hide the power menu on the lockscreen [1/2]
+4b9b9ef Set scrollview on the power menu
+8885edf Make the power menu configurable [1/2]
+ae78102 Enable/fix airplane mode in power menu
+aafdbc5 Use new gradient dialog also for recovery/bootloader action
+e80af94 Kill off the legacy dialog
+1c66dd9 Add screenshot option
+6298103 Add intent for screenshot
+b9d1e22 Add soft reboot option
+e8005f0 Update power menu icons
+fdf1cdf Power menu advanced reboot: make it dynamic
+6b9135b PowerMenu toggleable recovery/bootloader action
+dd0b629 Themes: skip useless settings check on keyguard state changes
+7cdaac1 [1/2] Cleanup: move theme/accent manager stuff out of StatusBar class
+69bac5a Fruity pebbles [1/3]
+f25003a Configure SystemUI theme [1/2]
+
+=======================
+     05-20-2018
+=======================
+
+
+   * frameworks/base/
+93da5ed Make resolver list fully themeable
+2f033b2 Fix some refresh issues when changing an overlay
+fa4afdd Disable scrolling cache
+59ecab8 Expose and tint settings dashboard icon tint
+bb5e662 [1/2] base: fix notification overlay config
+8a9a212 Reload more assets on overlay change
+2f7d261 Notification dynamic colors bool
+7f276e5 Add support for theming notifications
+4a3ef11 CellularTile: Protect toggling when device is locked
+f31b894 Expose autofill save dialog text color
+e0fec05 Themes: fix autofill saved entries picker dialog
+dfbf3a1 Expose toast colors for themes
+f3b4f5a core: Poor Man themes: fix autofill save dialog
+f33ddf3 Expose notification info text color
+1f401ba Allow Immersive cling colors to be fully themed
+45d10b8 Expose screen pinning dialog background and text color
+382c11c Expose resolver hardcoded colors
+0a8f0ee Extend dynamic notification bool for ambient notifications
+3e1ff0e Expose a bool to disable dynamic colors
+391585f Add Gboard overlay [2/2]
+46fe49d Theme DUI dialogs & things [2/2]
+e25168d Refactor sysui overlay to system
+f99a90b base: add CustomSettings category key
+71892e3 Add Custom proto
+
+   * packages/apps/DocumentsUI/
+62d4807 DocumentsUI: support night mode
+
+   * packages/apps/EmergencyInfo/
+1e77fa7 EmergencyInfo: support night mode
+
+   * packages/apps/PackageInstaller/
+aa91b28 PackageInstaller: support night mode
+8ee6079 Expose OverlayWarningDialog theme
+
+   * packages/apps/Snap/
+2f424d1 SnapdragonCamera: Change static nature for persist flag
+
+   * vendor/aosp/
+d5791bb vendor: Use AOSP packageinstaller
+debaf17 vendor: Cleanup build targets
+bbb3603 vendor: Include themes
+
+   * vendor/themes/
+f4719f1 ThemeAccentUtils: Update SystemUI overlay name [1/2]
+a08961f [2/2] Cleanup: move theme/accent manager stuff out of StatusBar class
+4f0d508 Organize strings
+8dd9a84 Organize a bit
+1a10328 vendor: Update SystemUI overlay name [2/2]
+d3680e6 [2/2] themes: fix notification overlay config
+d5fd412 Theme dark notifications
+614989d Fix resolver theme issue with selector not visible
+e0c1779 Ensure that the settings icons are adapting to the accents
+37bd0d2 Theme autofill save dialog text color
+84f9c94 Theme uninstall dialog
+2414f50 Theme Settings shortcuts background
+a0084fe Theme notification info text color
+48fa119 Theme the resolver
+b3ee770 Theme screen pinning dialog background and text color
+1cfa865 Theme immersive cling
+11e0b9f Fruity pebbles [2/3]
+148f007 Organize overlays / themes
+a8bc66c Theme safe boot dialog
+b76fb55 Fix dark theme on the activity picker
+becb840 Theme suggestions card summary text
+a36bc53 Fix brightness slider under Settings/Display
+94c189a Theme Moar dialogs
+de79a94 Add Gboard overlay [1/2]
+cb4a598 Theme DUI dialogs & things [1/2]
+64907f8 Add Settings Dark UI
+b58b79f Change makefile to compile as a regular apk
+ca47a43 DarkUI: Fix colors on some dialogs
+65e1f54 DarkUI: Improvements
+0adcd8c Refactor sysui overlay to system
+4ce6290 Initial Dark UI changes
+01e7e40 Lighter Quick Settings
+789b290 Fix QS loading animation
+f421602 Dark text support on Recents
+44fb2f7 Separate theme breakpoints
+
+=======================
+     05-19-2018
+=======================
+
+
+   * hardware/qcom/fm/
+115bce2 Merge tag 'LA.UM.6.5.r1-08500-8x96.0' into HEAD
+
+   * packages/apps/Snap/
+06b3638 Snap: Check for ACCESS_FINE_LOCATION instead of ACCESS_COARSE_LOCATION
+
+=======================
+     05-18-2018
+=======================
+
+
+   * build/make/
+6de9416 build: Disable stock dark theme
+
+   * vendor/aosp/
+235d6ca vendor: Fix 'pixelrebase' command
+
+   * vendor/pixelstyle/
+c397ce9 config: PRODUCT_PACKAGE_OVERLAYS -> DEVICE_PACKAGE_OVERLAYS
+
+=======================
+     05-17-2018
+=======================
+
+
+   * frameworks/base/
+0510bfc Fix notification transact fail problem
+d2abaa6 SystemUI: Don't append app name to file on lockscreen
+e753312 Adding optimization to reduce callbacks to TextClock
+514944b Check for Face Unlock Running before skipping bouncer via trusted face to prevent skipping bouncer with other trusted options.
+70b88d2 Add an option to force pre-O apps to use full screen aspect ratio
+dd12435 BatteryStats: Update WifiState even if EnergyInfo is invalid
+36c653f Update text size of overflow number view
+3292d1b Bind app name to menu row when notification updated
+9877d88 Fix intercepting touch events for guts
+3568900 Fix ResolverActivity don't show items
+dd73d21 Fixed Security Vulnerability of DcParamObject
+a26e7a1 Update internal ViewPager's SavedState to match Support Library version
+51fb4ae [DO NOT MERGE] Copy PermissionChecker from support lib and use in RcognitionService
+6403184 [DO NOT MERGE] Add permission check to setAllowOnlyVpnForUids
+86d0d89 Verify last array's length in readFromParcel
+09ba639 Make it possible to hide signal strength via Carrier Config
+bc76cc6 Add support for getAtr api
+964216a SystemUI: Tiny expanding improvement
+c03be69 Notifications: Materialize missed calls icons
+8cc34e5 base: recents: remove all delays on showing task header icons
+e7bf376 SystemUI: Fix Turkish AOSP translation error
+2a75d45 Switch to Pixel2XL 8.1 sounds [1/2]
+428549e Build custom audio files [2/2]
+b8d283e fwb: Add pixel color to sim colors
+1aaf67f Statusbar net monitor: stop the handler if screen is off
+6b4b8dd Add padding to network traffic arrows
+5c8aabee Implement Network Traffic indicator
+03542ef fwb: Add UserContentObserver from DUI
+56bf1d9 Show 4G instead of LTE switch
+6607364 Add isPackageInstalled boolean
+d7b2fe0 Bring in ColorUtils
+411cc58 Add our Utils helper class
+bd0de53 BatteryService: add turbo power charging support
+739d76d fwb: NavbarTuner: Reload navigation bar when changing style on tuner
+2fcda66 fwb: Check if navbar can be disabled
+c37db4b SysUiTuner: Add toggle for navigation bar
+2563438 base: Allow screen unpinning on devices without navbar
+0eba817 fwb: Add NavbarUtils
+918b61b Add NavBar toggle [1/2]
+dde009f NavbarTuner: Fix NPE
+d4e26c3 Correct colors for Pixel navbar icons
+59f7801 PixelNavbar: layout: Fix home button size
+b2f5b82 OpaLayout: Evaluate intensity correctly
+da5cab2 PixelNavbar: Fix colors for light colored navbar
+4358912 PixelNavbar: Fixed to work with oreo
+419db57 OpaLayout: fix logic behind setVertical
+3c2ec4b OpaLayout: setLandscape -> setVertical
+6f792c8 fwb: Pixel Navbar: hide OPA after initialisation
+262e92d Pixel navbar: allow disabling based on config
+6b85cc0 fwb: Pixel Navbar: Hide opa when not pressed, also remove halo
+96e752a Cleanup pixel navbar code
+8b4a8bb Fix landscape pixel animation view
+15ad8a2 Pixel Navbar, reverse engineered from smali.
+237a0a7 Add Pixel navbar icons
+04b3872 NightLight: Allow lower temperatures
+aacd453 Configure google-sans font
+101233d [1/2] Add 'GoogleSans' font family
+e21f23a SystemUI: force a clock update if the screen is turned back on
+a44a2d8 base: store custom fingerprint for package data
+5f9bc51 Revert "Core: Use ro.build.date to signal mIsUpgrade"
+3257a6c Always refresh system apps launcher shortcuts on build date change
+d92a282 SystemUI: Rotation button can't work at first time after rotate screen
+7c02a38 InputMethodManagerService: adjust grip mode for input enable/disable
+a2d400c Keyguard: Don't listen for fingerprint when prox.sensor is covered
+c78b98b base: telephony: Add support for DC_HSPAP
+9440c41 wifidisplay: Modify WifiDisplayController
+29889b9 wifidisplay: Use ExtendedRemoteDisplay to launch Wifi Display.
+02e355a Add VOLTE icon Extracted from CAF and adapted to AOSP by @xyyx Added switch to statusbar icon blacklist by @xyyx
+0216663 Persistent background app notification: disable by default
+b396a6e Fix notification shows wrong question
+db000c8 SystemUI: Prevent NPE in Dependency.get() in BrightnessController
+db805ee Current view findFocus maybe null, which cause NullPointerException.
+3fe3dc0 Spam: Fix non-protected broadcast from supersu, qcril and fm
+d966eef Widget: Catch null point exception in AbsListViewAutoScroller
+455abbf Fix service cannot start when service removed from restartList
+8735d31 Passing a new ArraySet instance to avoid crash
+a926ebf PackageManagerService: Add finally block to close the stream.
+15dd5d1 SystemUI: disable statusbar time refresh when screen off
+dbab67f Fix race condition when writing UidState of appops.
+f78c2da Workaround for wallpaper not shown correctly problem
+0066cdb FIX No sim - airplane mode padding
+e2840b8 Allow Python Versions Higher than 2.6
+3d51f66 camera: catch NullPointerException for Nexus 5
+15f6936 Fix Photosphere/Camera FCs
+40ad91f Fix for google backup and restore
+711a21f Bluetooth: Prioritize Bluetooth state change intent to start Service
+56f4b59 Base: Pixel Colors: Change dividers from Holo Blue to Pixel Blue
+e09b9ba Fix NPE when AOSP ambient display preference is removed
+962834e Enable non-market apps install by default
+8cee08a Treat default value that wasn't found as empty value.
+390bc30 SystemUI: make sure to expand all the way when flinging
+a3eeecb Fix disabled status bar when pinning app and user switch
+5f2e868 Fix some list-item selection/scrolling issues
+4e29bee Fix shared libraries loading during backup
+f6b4e42 Handle Backup onUnlockUser on fg thread
+07ae3eb GlobalActions: Fix systemserver crash issue
+99e3f52 Fix possible NPE crash when adding new accounts in Settings.
+3749981 Update network score from NetworkAgent
+ebb5186 Fix and work around aliasing rule violations
+000a418 ExifInterface: fix incorrect thumbnailLength in handleThumbnailFromJfif
+279d1de services: fix the NPE in RankingHelper
+2f2873a media: fix system_server deadLock
+1284328 Enable priority boost for non-Jack builds.
+79cb6cd Fix intermittent slowness in resolver activity towards end of day.
+7eedaaf PackageManagerService: Avoid NPE in matchComponentForVerifier
+be5082d Keyguard: Fix black background while screen turning off/on quickly
+a609741 base: touch response optimizations
+ec984ad DpmService : Added protected broadcast intents..
+eda710f aapt2: Replace strcpy with memcpy.
+8093ff1 InputWrapper: Opt out early if session == null
+30bfa93 Fix doFadingAnimationLocked in sanitized builds.
+c917c47 Optimize setStorageEncryption code
+c1719c0 Let InputFilter's message be processed faster
+70360f3 app_main: Fix "zygote is killed by signal 1"
+ea995c0 add SwapPss of native processes to totalSwapPss
+b73b1f5 Reduce the uncessery wm call while checkKeyguardVisibility
+cb485bd Fix DynamicLayout block index calculation after edit
+5887259 wakelock: continue read file when returned count > 0
+fdbb066 The network event should be an asynchronous callback
+f22689e BackupAgent: add backup shared mode
+f665e94 Release SQLite page cache as much as it can
+cca511a RecentTasks: Check task for null and return if yes
+f5f672b data: update missing permissions
+495945c Skype voice can't transfer to carkit after re-connection
+454c8cd media: Parse Exif OffsetTime in MediaScanner
+4fd420b SystemUI: modify overscroll bug in NotificationStackScrollLayout
+f6f3b58 jni: android.util.Log.logger_entry_max_payload_native @CriticalNative
+530ae08 Bring back missing menu items on text floating action mode
+a64522f Reset the profile when system application change version
+6162caf AMS PMS MountService
+34933e7 pm: Fix package install flow w.r.t. dexopt
+b6154a9 Do not apply app-link autoVerify policy to instant app installs
+f449ca5 Ensure dexopt is executed only with consistent package data
+41e95e4 media: Release buffer and stream once after usage
+384fb81 am: Remove duplicated incorrectly code in ProcessRecord
+e9d2ee0 Fix for wallpaper flicker on bootup on some targets
+90fcbb5 fix incorrect context classloader initialization in system_server
+b0332cc pms: Fix the IndexOutOfBoundsException issue
+9ffc376 SystemUI: fix heads up appears when disable_expand is set
+f7a25db hwui: check the buffer status before draw
+367d84e ConnectivityService doesn't send decreased score to factories at need
+c440d74 Decrease time changing between TOP & another state
+febb254 Add permission whitelist for EmergencyInfo app
+737873a media/jni: Check mute state before starting play
+6393b20 Use async thread for performPoll in NetworkStats
+7328389 AtomicFile: Rename the backup file to base file when backup exists
+119c857 Send broadcast to MediaScannerReceiver to refresh gallery
+4d36e76 Fix issue when start android/com.android.internal.backup.LocalTransportService
+
+   * frameworks/opt/telephony/
+b30f20a Don't assume 3GPP as active app on CDMA with LTE device
+
+   * packages/apps/Updates/
+860e990 Fix device name prop
+c937e56 Improve Automatic update checking
+
+   * vendor/aosp/
+0e6de50 Merge "overlay: Also disable navbar padding" into oreo-mr1
+cb11353 overlay: Also disable navbar padding
+6934bd8 vendor: carrierconfig: add volte for mcc:404 mnc:31
+02e6952 vendor: carrierconfig: enable also WoWI-FI for ELISA (244/05)
+a66d2fd vendor: carrierconfig: enable volte for ELISA (244/05)
+575e649 vendor: overlay: merge back all volte lines from prev version
+336b32b vendor: overlay: update CarrierConfig xml from op3 5.0.1
+a13183e vendor: Import carrier overlays from omni
+f9d117c repopick: handle manifest commits
+9f4fdf8 repopick: modify for PixelExperience
+110b16e vendor: Update repopick and envsetup
+
+   * vendor/themes/
+cb2e1c7 Initial commit
